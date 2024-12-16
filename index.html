@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Tailwind Css calculator</title>
+  <script class="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-500 flex items-center justify-center h-screen">
+
+
+    <div class="bg-blue-800 p-6 rounded-lg shadow-lg w-80" ><h1 class="text-center flex justify-around p-4 font-bold">
+
+       <span class="text-yellow-500">Calculator</span></h1>
+
+        <div id="result" class=" bg-blue-950 text-right text-3xl p-4  text-yellow-500 rounded-lg mb-4 hover:bg-pink-500">0</div>
+
+        <!-- <div id="result"class="bg-gray-400 rounded-lg  p-4  mb-3 w-32"> </div> -->
+
+        <div class=" grid grid-cols-5 gap-2">
+
+            <!-- calculator Buttons -->
+             <!-- 1st line -->
+
+           
+        
+             <button class="bg-lime-500 p-5 rounded hover:bg-gray-600 text-blue-900 onclick="appendValue('m+')">M+</button>
+
+        
+
+             <button class="bg-yellow-500 p-5 rounded hover:bg-red-600 text-blue-900 onclick="appendValue('M-') " >M-</button>
+
+             <button class="bg-purple-300 p-0 rounded hover:bg-purple-600  text-blue-900 onclick="appendValue('MRC') " >MRC</button>
+
+             <button class="bg-yellow-200 p-0 rounded hover:bg-pink-600  text-blue-900 onclick="result('Auto Reply')" >Auto Reply</button>
+
+            <button class="bg-red-700 py-0 rounded hover:bg-gray-600 content-center text-white onclick="appendValue('AC')">AC</button>
+
+            <!-- 2nd line -->
+
+
+            <button class="bg-yellow-400 p-4 rounded hover:bg-gray-600 text-blue-900 onclick="appendValue('7') " >7</button>
+
+            <button class="bg-red-500 p-4 rounded hover:bg-red-600 text-blue-900 onclick="appendValue('8') " >8</button>
+
+            <button class="bg-white p-4 rounded hover:bg-yellow-600 text-blue-900 onclick="appendValue('9')" >9</button>
+
+            <button class="bg-red-600 p-0 rounded hover:bg-yellow-300 text-white onclick="appendValue('%') " >tan</button>
+
+            <button class="bg-blue-400 p-0 rounded hover:bg-yellow-600 text-yellow-900 onclick="appendValue('Check)>Check</button>
+
+            <button class="bg-yellow-700 p-4 rounded hover:bg-gray-600 text-white onclick="appendValue('4') " >4</button>
+
+            <button class="bg-lime-700 p-0 hove:bg-gray-300 teick="appendValue('5') " >5</button>
+
+           
+
+            <button class="bg-red-500 p-4 rounded hover:bg-green-600 text-white onclick="appendValue('6') " >6</button>
+
+            <button class="bg-purple-600 p-4 rounded hover:bg--600 text-blue-900 onclick="appendValue('*') " >*</button>
+
+            <button class="bg-orange-600 p-0 rounded hover:bg-gray-600 text-white onclick="appendValue('const')">const</button>
+
+            <button class="bg-amber-400 p-4 rounded hover:bg-blue-600 text-blue-600 onclick="appendValue('1')" >1</button>
+
+            <!-- 4th line -->
+
+            <button class="bg-red-700 p-4 rounded hover:bg-green-600 text-white onclick="appendValue('2') " >2</button>
+             
+            <button class="bg-pink-700 p-4 rounded hover:bg-blue-600 text-blue-900 onclick="appendValue('3') " >3</button>
+
+            <button class="bg-yellow-500 p-4 rounded hover:bg-yellow-600 text-blue-900 onclick="calculateResult ()" >=</button>
+
+            <button class="bg-purple-500 p-4 rounded hover:bg-gray-600 text-white onclick="appendValue('hyp')">hyp</button>
+
+            <button class="bg-red-600 p-0 rounded hover:bg-yellow-600 text-white onclick="appendValue('00')">00</button>
+
+            <button class="bg-lime-700 p-0 rounded hover:bg-red-600 text-white onclick="appendValue('+') " >+</button>
+
+            <button class="bg-white p-5 rounded hover:bg-pink-600 text-blue-900 onclick="appendValue('()') " >()</button>
+
+
+            <button class="bg-red-500 p-0 rounded hover:bg-gray-600 text-white onclick="appendValue('-') ">-</button>
+
+
+            <button class="bg-yellow-500 p-0 rounded hover:bg-purple-600 text-blue-900 onclick="appendValue('M-') " >cos</button>
+
+    </div>
+
+    <button class= " font-extrabold bg-yellow-300 p-4 rounded-lg hover:bg-red-600 text-blue-900 w-full mt-5  onclick=" clearResult()" >clear</button>
+    </div>
+
+
+  
+</body>
+</html>
